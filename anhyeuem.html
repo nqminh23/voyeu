@@ -41,7 +41,7 @@
       }
       .heart {
         color: #d63384;
-        font-size: 50px;
+        font-size: 70px;
         animation: heartbeat 1s infinite;
         cursor: pointer;
       }
@@ -53,6 +53,9 @@
         50% {
           transform: scale(1.2);
         }
+      }
+      .heart a {
+        text-decoration: none;
       }
     </style>
   </head>
@@ -68,14 +71,14 @@
       </p>
       <p>Anh nhớ em</p>
       <div class="signature">Nguyễn Quang Minh</div>
-      <div class="heart">❤️</div>
+      <div class="heart">
+        <a href="https://nqminh23.github.io/viuo/viuo.html">❤️</a>
+      </div>
     </div>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const heart = document.querySelector(".heart");
-        heart.addEventListener("click", function () {
-          alert("Anh yêu em!");
-        });
+        heart.addEventListener("click", function () );
       });
     </script>
   </body>
