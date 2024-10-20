@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anh Yêu Em</title>
+    <style>
+      body {
+        background-color: #f0e6f6;
+        text-align: center;
+        padding: 50px;
+      }
+      .container {
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: auto;
+        position: relative;
+        background-image: url(voiu.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      h1 {
+        color: #d63384;
+        font-family: "Cursive", sans-serif;
+      }
+      p {
+        font-size: 18px;
+        color: whitesmoke;
+        text-align: left;
+        margin: 20px 0;
+      }
+      .signature {
+        font-family: "Cursive", sans-serif;
+        font-size: 24px;
+        color: #d63384;
+        margin-top: 20px;
+      }
+      .heart {
+        color: #d63384;
+        font-size: 50px;
+        animation: heartbeat 1s infinite;
+        cursor: pointer;
+      }
+      @keyframes heartbeat {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Chúc vợ yêu 20/10</h1>
+      <p>Võ TNgọc Hằng</p>
+      <p>
+        Anh chúc em bé luôn luôn xinh đẹp, có nhiều niềm vui luôn nở nụ cười
+        trên môi và gặp được thật nhiều may mắn hạnh phúc trong cuộc sống. Mong
+        rằng anh với em sẽ sớm thuộc về nhau.<br />Phụ nữ là để yêu thương. Anh
+        yêu em bé nhiều lắm ạ ❤️❤️❤️
+      </p>
+      <p>Anh nhớ em</p>
+      <div class="signature">Nguyễn Quang Minh</div>
+      <div class="heart">❤️</div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const heart = document.querySelector(".heart");
+        heart.addEventListener("click", function () {
+          alert("Anh yêu em!");
+        });
+      });
+    </script>
+  </body>
+</html>
